@@ -1,0 +1,17 @@
+.order-head{
+    border-bottom: 1px solid aliceblue;
+    margin: 30px;
+}
+
+.order-info{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 20px 0px;
+}
+
+.result {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 80vw;
+}

@@ -1,0 +1,18 @@
+
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.7px solid silver;
+    margin: 20px 0px;    
+}
+
+.button-style{
+    background-color: rgb(235, 228, 230);
+    border: 1px solid slategrey;
+    align-self: center;
+    outline-color: rgb(240, 218, 225);
+    margin-bottom: 20px;
+      margin-left: 10px;
+}
+
