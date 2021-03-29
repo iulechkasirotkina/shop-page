@@ -1,8 +1,9 @@
 
 
 .list{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns:  10vw 30vw 10vw 20vw 20vw 10vw;
+    text-align: left;
     border-bottom: 0.7px solid silver;
     margin: 20px 0px;    
 }
