@@ -1,12 +1,12 @@
 import './OrderDetail.css'
 import React, { ChangeEvent, useState } from 'react'
-import ProductsList from './ProductsList';
-import { Products } from '../interfaces/Products';
+import ProductRow from './ProductRow';
+import { Product } from '../interfaces/Products';
 import { isPropertySignature } from 'typescript';
 import ModalWindow from './ModalWindow';
 
 function OrderDetail() {
-  var products: Products[] = [{
+  const products: Product[] = [{
     name: 'name1',
     price: 100,
     quantity: 1
@@ -21,15 +21,17 @@ function OrderDetail() {
     price: 100,
     quantity: 1
   }];
-  var getSum = (): number => {
-    var tmpsum: number = 0;
+
+  var [order, setOrder] = useState([...products])
+
+  const getSum = (): number => {
+    let tmpsum: number = 0;
     order.forEach((product) => {
       tmpsum += (product.price * product.quantity)
     });
     return tmpsum;
   }
   
-  var [order, setOrder] = useState(products.concat())
   var [sum, setSum] = useState(getSum)
   
   const handlerSumChange = () => {
@@ -68,7 +70,7 @@ function OrderDetail() {
         <div>Delete</div>
       </div>
       {
-        order.map((product, index) => (<ProductsList product={product}
+        order.map((product, index) => (<ProductRow product={product}
           index={index}
           onAddClick={onAddClick}
           onDeleteClick={onDeleteClick}

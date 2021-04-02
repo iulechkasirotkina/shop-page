@@ -1,17 +1,19 @@
 .order-head{
-    border-bottom: 1px solid aliceblue;
-    margin: 30px;
+    border-bottom: 1.5px solid rgba(203, 207, 211, 0.808);
+    padding: 20px;
+    margin: 0 2px;
 }
 
 .order-info{
     display: flex;
     justify-content: space-between;
     width: 50vw;
-    margin: 20px 0px;
+    padding: 20px 0px;
 }
 
 .result {
     font-weight: bold;
     font-size: 20px;
     margin-left: 80vw;
+    padding: 20px;
 }

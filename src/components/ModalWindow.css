@@ -18,7 +18,7 @@
     }
     
     .modal-window{
-        background-color: rgba(248, 220, 237, 0.829);
+        background-color: rgb(240, 227, 234);
         position: fixed;
         width: 20vw;
         height: max-content;
@@ -27,6 +27,7 @@
         border: 1px solid rgb(163, 163, 163);
         margin-top: -100vh;
         transition: all .8s ease;
+        border-radius: 10px;
     }
     
     .modal-back.visible .modal-window{
@@ -51,12 +52,13 @@
     }
     
     .button-modal{
-        background-color: rgb(227, 207, 228);
-        border: 1px solid slategrey;
-        text-align: center;
-        line-height: 16px;
-        width: 60px;
+        background-color: rgb(243, 200, 212);
+        border: 1px solid #8c99a7ab;
+        align-self: center;
+        outline: none;
+       margin:  12px;
         height: 20px;
-        margin: 5px;
-    outline-color: whitesmoke;
+        width: 40px;
+        border-radius: 20px;
+
     }

@@ -1,7 +1,4 @@
-import { OrderInfos } from '../interfaces/OrderInfos';
 import './OrderInfo.css';
-import ProductsList from './ProductsList';
-
 
 
 function OrderInformation() {
@@ -9,7 +6,7 @@ function OrderInformation() {
         number: 2384,
         adress : 'ул Счастливая, д 13, кв 666',
     }
-    var date = new Date().toLocaleDateString();
+    const date = new Date().toLocaleDateString();
     
     
     return (
